@@ -1,0 +1,12 @@
+<div class="file-upload">
+  <input
+    type="file"
+    accept=".txt"
+    (change)="onFileSelected($event)"
+    #file
+    style="display: none"
+  />
+  <button mat-mini-fab (click)="file.click()" style="background-color: #ebf4ff; color: #002D62">
+    <mat-icon>upload</mat-icon>
+  </button>
+</div>
